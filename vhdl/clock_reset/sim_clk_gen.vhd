@@ -20,8 +20,8 @@ begin
 process
 begin
     clk <= '0';
-    wait for clock_period;
+    wait for clock_period/2;
     clk <= '1';
-    wait for clock_period;
+    wait for clock_period/2;
 end process;  
 end Behavioral;
